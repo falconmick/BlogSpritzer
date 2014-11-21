@@ -1,4 +1,4 @@
-#Blog Spritzer
+﻿#Blog Spritzer
 
 ## Synopsis
 
@@ -49,7 +49,6 @@ Ok, now for the instructions:
   </script>
 
 <br />
-<h1>Login Success</h1>
 <div>
 Unfortunately Currently I cannot redirect you back to the blog you were reading, just close this popup window and login again on the Spritz reader, this will log you in :)</div>
 ```
