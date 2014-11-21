@@ -19,7 +19,7 @@ Ok, now for the instructions:
 1. Currently to install to your blogger you need to add a Html/JavaScript gadget and paste the code in to there.
 2. You will need to goto your Pages section of your blogger, from there create a new page called "login_success" or what ever you want. Change the input to HTML and copy/paste the following code:
 
-'''javascript
+```javascript
 <script type="text/javascript">
     var hash = window.location.hash;
     var origin = window.location.protocol + "//" + window.location.host;
@@ -42,7 +42,7 @@ Ok, now for the instructions:
         window.opener.postMessage(hash, origin);
     }
 </script>
-'''
+```
 
 Don't worry that when you browse the page it looks blank, this is used by Spritz to manage user sesions.
 
