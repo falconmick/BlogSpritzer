@@ -5,6 +5,10 @@
 This is a simple tool for adding a Spritz reader to you blog/article based website.
 Currently it only supports blogger, but it could be (and will be) re-written to be less coupled to bloggers HTML markdown.
 
+## Demo
+A live demo is avaliable from my blog: http://www.mcrook.com/
+Just click on Spritz this post!
+
 ## Why?
 
 After being shown Spritz by another work colleague I really wanted to add it to my blog. Initially I didn't have a developer sdk invite so I reverse engineered the Spritzlet bookmark bar tool to Spritz my blog. Unfortunately, due to Bloggers weird default HTML markdown I had to do allot of work in the Template and even after that it still didn't work 100%.
@@ -59,6 +63,7 @@ I haven’t tested these instructions from scratch in a new blog, so there might
 1. Test on a new blank Blogger blog.
 2. Test that the template of the blog doesn't break it
 3. de-couple from Blogger through taking the JQuery selectors out and replace for configurable values so the user can substitute the tags of their HTML markup as most blogs/article based sites follow the same format.
+4. Potentially turn this into a Blogger Gadget aswell, thought I initially tried to make this a Gadget, but got weird errors from blogger when I coppied/pasted their examples to test :|
 
 ## Contributors
 
