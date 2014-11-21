@@ -7,7 +7,7 @@ Currently it only supports blogger, but it could be (and will be) re-written to 
 
 ## Why?
 
-After being shown Spritz by another work colleague I really wanted to add it to my blog. Initially I didn't have a developer sdk invite so I reverse engineered the Spritzlet bookmark bar tool to Spritz my blog. Unfortunatly, due to Bloggers weird default HTML markdown I had to do allot of work in the Template and even after that it still didn't work 100%.
+After being shown Spritz by another work colleague I really wanted to add it to my blog. Initially I didn't have a developer sdk invite so I reverse engineered the Spritzlet bookmark bar tool to Spritz my blog. Unfortunately, due to Bloggers weird default HTML markdown I had to do allot of work in the Template and even after that it still didn't work 100%.
 
 I emailed Spritz asking for help in attempting to optimise my HTML even more in attempt to get it to work, they ended up sending me  a developer SDK access invite so I decided this could be my first go!
 
@@ -17,9 +17,9 @@ For initial testing, using my clientId probably won't break everything, but if y
 
 Ok, now for the instructions:
 1. Currently to install to your blogger you need to add a Html/JavaScript gadget and paste the code in to there.
-2. You will need to goto your Pages section of your blogger, from there create a new page called "login_success" or what ever you want. Change the input to HTML and coppy/paste the following code:
+2. You will need to goto your Pages section of your blogger, from there create a new page called "login_success" or what ever you want. Change the input to HTML and copy/paste the following code:
 
----javascript
+'''javascript
 <script type="text/javascript">
     var hash = window.location.hash;
     var origin = window.location.protocol + "//" + window.location.host;
@@ -42,12 +42,12 @@ Ok, now for the instructions:
         window.opener.postMessage(hash, origin);
     }
 </script>
----
+'''
 
 Don't worry that when you browse the page it looks blank, this is used by Spritz to manage user sesions.
 
 ##### NOTE:
-I havn't tested these instructions from scratch in a new blog, so there might be some missing information. This will be fixed soon.
+I haven’t tested these instructions from scratch in a new blog, so there might be some missing information. This will be fixed soon.
 
 ## Contributors
 
