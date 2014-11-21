@@ -47,7 +47,12 @@ Ok, now for the instructions:
 Don't worry that when you browse the page it looks blank, this is used by Spritz to manage user sesions.
 
 ##### NOTE:
-I haven’t tested these instructions from scratch in a new blog, so there might be some missing information. This will be fixed soon.
+I havenâ€™t tested these instructions from scratch in a new blog, so there might be some missing information. This will be fixed soon.
+
+## Future Plans
+1. Test on a new blank Blogger blog.
+2. Test that the template of the blog doesn't break it
+3. de-couple from Blogger through taking the JQuery selectors out and replace for configurable values so the user can substitute the tags of their HTML markup as most blogs/article based sites follow the same format.
 
 ## Contributors
 
