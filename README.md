@@ -53,6 +53,7 @@ I haven’t tested these instructions from scratch in a new blog, so there might
 1. Test on a new blank Blogger blog.
 2. Test that the template of the blog doesn't break it
 3. de-couple from Blogger through taking the JQuery selectors out and replace for configurable values so the user can substitute the tags of their HTML markup as most blogs/article based sites follow the same format.
+4. Potentially turn this into a Blogger Gadget aswell, thought I initially tried to make this a Gadget, but got weird errors from blogger when I coppied/pasted their examples to test :|
 
 ## Contributors
 
