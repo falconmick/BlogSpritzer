@@ -21,27 +21,33 @@ Ok, now for the instructions:
 
 ```javascript
 <script type="text/javascript">
-    var hash = window.location.hash;
-    var origin = window.location.protocol + "//" + window.location.host;
+   var hash = window.location.hash;
+   var origin = window.location.protocol + "//" + window.location.host;
 
-    // also set token as window.name, just as a crazy fail safe
-    window.name = hash;
+   // also set token as window.name, just as a crazy fail safe
+   window.name = hash;
 
-    // postMessage does not work reliably in IE, pass the value through localStorage
-    if (typeof(localStorage) !== 'undefined') {
-        try {
-            localStorage.setItem("spritz.authResponse", hash);
-        } catch (e) {
-            if (console) {
-                console.log(e, 'Can\'t write to localStorage');
+   // postMessage does not work reliably in IE, pass the value through localStorage
+            if (typeof(localStorage) !== 'undefined') {
+                try {
+                 localStorage.setItem("spritz.authResponse", hash);
+             }
+             catch(e) {
+              if(console) {
+               console.log(e, 'Can\'t write to localStorage');
+              }
+             }
             }
-        }
-    }
 
-    if (window.opener) {
-        window.opener.postMessage(hash, origin);
-    }
-</script>
+            if (window.opener) {
+               window.opener.postMessage(hash, origin);
+            }
+  </script>
+
+<br />
+<h1>Login Success</h1>
+<div>
+Unfortunately Currently I cannot redirect you back to the blog you were reading, just close this popup window and login again on the Spritz reader, this will log you in :)</div>
 ```
 
 Don't worry that when you browse the page it looks blank, this is used by Spritz to manage user sesions.
